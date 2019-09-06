@@ -19,7 +19,12 @@ public class PlaneTest {
 
     @Test
     public void planeHasCapacity(){
-        assertEquals(100, plane.getCapacityFromEnum());
+        assertEquals(1000, plane.getCapacityFromEnum());
+    }
+
+    @Test
+    public void planeHasWeight(){
+        assertEquals(3000, plane.getWeightFromEnum());
     }
 
 }

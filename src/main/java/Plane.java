@@ -15,5 +15,8 @@ public class Plane {
     public int getCapacityFromEnum() {
         return this.type.getCapacity();
     }
+    public int getWeightFromEnum() {
+        return this.type.getWeight();
+    }
 }
 
