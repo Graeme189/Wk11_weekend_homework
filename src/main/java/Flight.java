@@ -22,11 +22,13 @@ public class Flight {
         return this.plane;
     }
 
-
     public int addPassenger(Passenger passenger) {
             this.passengers.add(passenger);
             return this.passengers.size();
     }
 
+    public int getCapacityMinusPassengers() {
+        return (this.plane.getCapacityFromEnum() - this.passengers.size());
+    }
 }
 
