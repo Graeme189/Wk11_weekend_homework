@@ -2,10 +2,12 @@ public class Plane {
 
     private PlaneType type;
     private int weight;
+    private int capacity;
 
     public Plane(PlaneType type) {
         this.type = type;
-//        this.weight = weight;
+        this.weight = type.getWeight();
+        this.capacity = type.getCapacity();
     }
 
     public PlaneType getType() {

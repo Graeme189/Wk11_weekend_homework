@@ -9,12 +9,24 @@ public class Flight {
     private Plane plane;
     private ArrayList<Passenger> passengers;
 
-    public Flight(int flightnumber, String destination, String departureAirport, String departureTime, Plane PlaneType){
+    public Flight(int flightnumber, String destination, String departureAirport, String departureTime, Plane plane){
         this.flightNumber = flightNumber;
         this.destination = destination;
         this.departureAirport = departureAirport;
         this.departureTime = departureTime;
-        this.plane = PlaneType;
+        this.plane = plane;
         this.passengers = new ArrayList<Passenger>();
     }
+
+    public Plane getPlane() {
+        return this.plane;
+    }
+
+
+    public int addPassenger(Passenger passenger) {
+            this.passengers.add(passenger);
+            return this.passengers.size();
+    }
+
 }
+

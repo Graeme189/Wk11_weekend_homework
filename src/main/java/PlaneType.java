@@ -1,7 +1,7 @@
 public enum PlaneType {
-    CONCORDE(3000, 1000),
-    BOEING747(5000, 3000),
-    SPITFIRE(1000, 500);
+    CONCORDE(3000, 100),
+    BOEING747(5000, 300),
+    SPITFIRE(1000, 2);
 
     private final int weight;
     private final int capacity;
