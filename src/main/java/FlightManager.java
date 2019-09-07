@@ -26,4 +26,8 @@ public class FlightManager {
         }
         return totalLuggageWeight;
     }
+
+    public int returnLuggageAllowanceLeft() {
+        return (returnTotalBaggageAllowance() - returnTotalLuggageWeight());
+    }
 }

@@ -37,4 +37,11 @@ public class FlightManagerTest {
         assertEquals(90, this.flightManager.returnTotalLuggageWeight());
     }
 
+    @Test
+    public void canReturnLuggageAllowanceLeft(){
+        this.flight.addPassenger(passenger1);
+        this.flight.addPassenger(passenger2);
+        assertEquals(1410, this.flightManager.returnLuggageAllowanceLeft());
+    }
+
 }
