@@ -23,8 +23,10 @@ public class Flight {
     }
 
     public int addPassenger(Passenger passenger) {
-            this.passengers.add(passenger);
-            return this.passengers.size();
+        if (this.passengers.size() < this.plane.getCapacityFromEnum()) {
+                this.passengers.add(passenger);
+        }
+        return this.passengers.size();
     }
 
     public int getCapacityMinusPassengers() {
