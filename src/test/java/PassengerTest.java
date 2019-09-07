@@ -21,5 +21,6 @@ public class PassengerTest {
     public void passengerHasBags(){
         assertEquals(1, passenger.getLuggage());
     }
+
 }
 

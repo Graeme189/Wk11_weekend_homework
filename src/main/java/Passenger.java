@@ -15,4 +15,5 @@ public class Passenger {
     public int getLuggage() {
         return this.bags;
     }
+
 }

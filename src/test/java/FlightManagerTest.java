@@ -25,4 +25,16 @@ public class FlightManagerTest {
         assertEquals(1500, this.flightManager.returnTotalBaggageAllowance());
     }
 
+    @Test
+    public void canReturrnAverageBaggageWeight(){
+        assertEquals(15, this.flightManager.returnAverageBaggageWeight());
+    }
+
+    @Test
+    public void canReturnTotalLuggageWeight(){
+        this.flight.addPassenger(passenger1);
+        this.flight.addPassenger(passenger2);
+        assertEquals(90, this.flightManager.returnTotalLuggageWeight());
+    }
+
 }
